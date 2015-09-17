@@ -1,0 +1,122 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% aunormal.inp
+%
+% Creates nodes to be used as inputs to the model.
+% The total number of nodes is 81 (9x9)
+% Any arbitrary input can be configures by turning
+% on nodes in a timeline.
+%
+% Modified: Fatima Husain
+%           Antonio Ulloa
+%           Fri Dec  7 18:14:53 EST 2001
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,22] 1.00) }
+  Node activation { ([1,23] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{ 
+  Node activation {ALL 0.0 }
+  Node activation { ([1,23] 1.00) }
+  Node activation { ([1,24] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,24] 1.00) }
+  Node activation { ([1,25] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,25] 1.00) }
+  Node activation { ([1,26] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,26] 1.00) }
+  Node activation { ([1,27] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,27] 1.00) }
+  Node activation { ([1,26] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{ 
+  Node activation {ALL 0.0 }
+  Node activation { ([1,26] 1.00) }
+  Node activation { ([1,25] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,25] 1.00) }
+  Node activation { ([1,24] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,24] 1.00) }
+  Node activation { ([1,23] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,23] 1.00) }
+  Node activation { ([1,22] 1.00) }
+}
+Run 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fatima T. Husain
+NIDCD/NIH
+Bldg. 10/ Room 6C-420
+Phone: 301-594-7758

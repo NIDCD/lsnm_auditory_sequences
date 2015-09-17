@@ -1,0 +1,254 @@
+%---------------------------------------------------------------------
+% Connection weights from MGN to Ai
+%---------------------------------------------------------------------
+#include weights/mgnsea1u.w
+#include weights/mgnsea1d.w
+
+%---------------------------------------------------------------------
+% Connection weights within Ai
+%---------------------------------------------------------------------
+#include weights/ea1uea1u.w
+#include weights/ia1uea1u.w
+#include weights/ea1uia1u.w
+#include weights/ea1dea1d.w
+#include weights/ea1dia1d.w
+#include weights/ia1dea1d.w
+
+%---------------------------------------------------------------------
+% Connection weights from Ai to Aii
+%---------------------------------------------------------------------
+#include weights/ea1uea2u.w
+#include weights/ea1uea2c.w
+#include weights/ea1dea2c.w
+#include weights/ea1dea2d.w
+
+%---------------------------------------------------------------------
+% Connection weights within Aii
+%---------------------------------------------------------------------
+#include weights/ea2uea2u.w
+#include weights/ea2uia2u.w
+#include weights/ia2uea2u.w
+#include weights/ea2cea2c.w
+#include weights/ea2cia2c.w
+#include weights/ia2cea2c.w
+#include weights/ea2dea2d.w
+#include weights/ea2dia2d.w
+#include weights/ia2dea2d.w
+
+%---------------------------------------------------------------------
+% Connection weights from Aii to Ai
+% This feedback was eliminated recently by FH: October 31, 2000
+%---------------------------------------------------------------------
+%#include weights/ea2uea1u.w
+%#include weights/ea2dea1d.w
+
+%---------------------------------------------------------------------
+% Connection weights from Aii to STG
+%---------------------------------------------------------------------
+#include weights/ea2uestg.w
+#include weights/ea2cestg.w
+#include weights/ea2destg.w
+
+%---------------------------------------------------------------------
+% Connection weights within STG
+%---------------------------------------------------------------------
+#include weights/estgestg.w
+#include weights/estgistg.w
+#include weights/istgestg.w
+
+%---------------------------------------------------------------------
+% Connection weights from STG to Aii
+%---------------------------------------------------------------------
+#include weights/estgea2u.w
+#include weights/estgea2d.w
+#include weights/estgea2c.w
+
+%---------------------------------------------------------------------
+% Connection weights from STG to PFC
+%---------------------------------------------------------------------
+#include weights/estgexfs.w
+#include weights/estgexfs_a.w
+#include weights/estgexfs_b.w
+
+%---------------------------------------------------------------------
+% Connection weights between FS and D1
+%---------------------------------------------------------------------
+#include weights/exfsifd1.w
+#include weights/efd1infs.w
+#include weights/exfs_aifd1_a.w
+#include weights/efd1_ainfs_a.w
+#include weights/exfs_bifd1_b.w
+#include weights/efd1_binfs_b.w
+
+%---------------------------------------------------------------------
+% Connection weights between FS and D2
+%---------------------------------------------------------------------
+#include weights/exfsefd2.w
+#include weights/exfs_aefd2_a.w
+#include weights/exfs_befd2_b.w
+
+%---------------------------------------------------------------------
+% Connection weights between FS and R
+%---------------------------------------------------------------------
+#include weights/exfsexfr.w
+#include weights/exfs_aexfr_a.w
+#include weights/exfs_bexfr_b.w
+
+%---------------------------------------------------------------------
+% Connection weights within FS
+%---------------------------------------------------------------------
+#include weights/exfsexfs.w
+#include weights/exfsinfs.w
+#include weights/infsexfs.w
+#include weights/exfs_aexfs_a.w
+#include weights/exfs_ainfs_a.w
+#include weights/infs_aexfs_a.w
+#include weights/exfs_bexfs_b.w
+#include weights/exfs_binfs_b.w
+#include weights/infs_bexfs_b.w
+
+%---------------------------------------------------------------------
+% Connection weights between D1 and D2
+%---------------------------------------------------------------------
+#include weights/efd1efd2.w
+#include weights/efd2efd1.w
+#include weights/efd1_aefd2_a.w
+#include weights/efd2_aefd1_a.w
+#include weights/efd1_befd2_b.w
+#include weights/efd2_befd1_b.w
+
+%---------------------------------------------------------------------
+% Connection weights between D1 and R
+%---------------------------------------------------------------------
+#include weights/efd1exfr.w
+#include weights/exfrifd1.w
+#include weights/efd1_aexfr_a.w
+#include weights/exfr_aifd1_a.w
+#include weights/efd1_bexfr_b.w
+#include weights/exfr_bifd1_b.w
+
+%---------------------------------------------------------------------
+% Connection weights within D1
+%---------------------------------------------------------------------
+#include weights/efd1efd1.w
+#include weights/efd1ifd1.w
+#include weights/ifd1efd1.w
+#include weights/efd1_aefd1_a.w
+#include weights/efd1_aifd1_a.w
+#include weights/ifd1_aefd1_a.w
+#include weights/efd1_befd1_b.w
+#include weights/efd1_bifd1_b.w
+#include weights/ifd1_befd1_b.w
+
+%---------------------------------------------------------------------
+% Connection weights between D2 and R
+%---------------------------------------------------------------------
+#include weights/exfrifd2.w
+#include weights/exfr_aifd2_a.w
+#include weights/exfr_bifd2_b.w
+
+%---------------------------------------------------------------------
+% Connection weights within D2
+%---------------------------------------------------------------------
+#include weights/efd2efd2.w
+#include weights/efd2ifd2.w
+#include weights/ifd2efd2.w
+#include weights/efd2_aefd2_a.w
+#include weights/efd2_aifd2_a.w
+#include weights/ifd2_aefd2_a.w
+#include weights/efd2_befd2_b.w
+#include weights/efd2_bifd2_b.w
+#include weights/ifd2_befd2_b.w
+
+%---------------------------------------------------------------------
+% Connection weights within R
+%---------------------------------------------------------------------
+#include weights/exfrexfr.w
+#include weights/exfrinfr.w
+#include weights/infrexfr.w
+#include weights/exfr_aexfr_a.w
+#include weights/exfr_ainfr_a.w
+#include weights/infr_aexfr_a.w
+#include weights/exfr_bexfr_b.w
+#include weights/exfr_binfr_b.w
+#include weights/infr_bexfr_b.w
+
+%---------------------------------------------------------------------
+% Connection weights from PFC to STG
+%---------------------------------------------------------------------
+#include weights/efd1istg.w
+#include weights/efd2estg.w
+#include weights/efd1_aistg.w
+#include weights/efd2_aestg.w
+#include weights/efd1_bistg.w
+#include weights/efd2_bestg.w
+
+%---------------------------------------------------------------------
+% Connection weights from PFC to Aii
+%---------------------------------------------------------------------
+#include weights/efd2ea2u.w
+#include weights/efd2ea2c.w
+#include weights/efd2ea2d.w
+#include weights/efd2_aea2u.w
+#include weights/efd2_aea2c.w
+#include weights/efd2_aea2d.w
+#include weights/efd2_bea2u.w
+#include weights/efd2_bea2c.w
+#include weights/efd2_bea2d.w
+
+%---------------------------------------------------------------------
+% Connection weights from Attention module to PFC
+%---------------------------------------------------------------------
+#include weights/attsefd2.w
+#include weights/attsefd2_a.w
+#include weights/attsefd2_b.w
+#include weights/attvatts.w
+
+%---------------------------------------------------------------------
+% Connection weights in control region
+%---------------------------------------------------------------------
+#include weights/ectlectl.w
+#include weights/ectlictl.w
+#include weights/ictlectl.w
+#include weights/ictlictl.w
+
+%---------------------------------------------------------------------
+% Connection weights from GA to FS
+%---------------------------------------------------------------------
+#include weights/exgainfs.w
+#include weights/exga_ainfs_a.w
+#include weights/exga_binfs_b.w
+
+%---------------------------------------------------------------------
+% Connection weights within GA
+%---------------------------------------------------------------------
+#include weights/exgaexga.w
+#include weights/exga_aexga_a.w
+#include weights/exga_bexga_b.w
+#include weights/ingaexga.w
+#include weights/inga_aexga_a.w
+#include weights/inga_bexga_b.w
+#include weights/exgainga.w
+#include weights/exga_ainga_a.w
+#include weights/exga_binga_b.w
+
+#include weights/exgainga_a.w
+#include weights/exgainga_b.w
+#include weights/exga_ainga.w
+#include weights/exga_ainga_b.w
+#include weights/exga_binga.w
+#include weights/exga_binga_a.w
+
+%---------------------------------------------------------------------
+% Connection weights from D1 to GA
+%---------------------------------------------------------------------
+#include weights/efd1exga.w
+#include weights/efd1_aexga_a.w
+#include weights/efd1_bexga_b.w
+
+%---------------------------------------------------------------------
+% Connection weights from Attention module to GA
+%---------------------------------------------------------------------
+#include weights/attvexga_a.w
+#include weights/attvexga_b.w
+

@@ -1,0 +1,353 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% irregular2.inp
+%
+% Creates nodes to be used as inputs to the model.
+% This is for a long stimuli (long sequences)
+% The total number of nodes is 81 (9x9)
+% Any arbitrary input can be configured by turning
+% on nodes in a timeline.
+%
+% The segment below corresponds to:
+% A. 600-ms tonal pattern (120 timesteps)
+% B. 500-ms intrasegmental period (100 timesteps)
+% C. 500-ms tonal pattern (100 timesteps)
+% D. 300-ms intrasegmental period (60 timesteps)
+% E. 500-ms tonal pattern (100 timesteps)
+%
+% 1 simulation timestep = 5 milliseconds
+%
+% Antonio Ulloa
+% Wed Aug 21 15:10:13 EDT 2002
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------
+% first segment of sequence
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,27] 1.00) }
+  Node activation { ([1,28] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{ 
+  Node activation {ALL 0.0 }
+  Node activation { ([1,28] 1.00) }
+  Node activation { ([1,29] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,29] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{ 
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,29] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,29] 1.00) }
+  Node activation { ([1,28] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,28] 1.00) }
+  Node activation { ([1,27] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+% first intrasegmental interval
+%----------------------------------------------------
+set (MGNs, 81)
+{
+  Node activation {ALL 0.0 }
+}
+Run 100
+
+%----------------------------------------------------
+% second segment of sequence
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,37] 1.00) }
+  Node activation { ([1,38] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{ 
+  Node activation {ALL 0.0 }
+  Node activation { ([1,38] 1.00) }
+  Node activation { ([1,39] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,39] 1.00) }
+  Node activation { ([1,40] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,40] 1.00) }
+  Node activation { ([1,41] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,41] 1.00) }
+  Node activation { ([1,42] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,42] 1.00) }
+  Node activation { ([1,41] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{ 
+  Node activation {ALL 0.0 }
+  Node activation { ([1,41] 1.00) }
+  Node activation { ([1,40] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,40] 1.00) }
+  Node activation { ([1,39] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,39] 1.00) }
+  Node activation { ([1,38] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,38] 1.00) }
+  Node activation { ([1,37] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+% second intrasegmental interval
+%----------------------------------------------------
+set (MGNs, 81)
+{
+  Node activation {ALL 0.0 }
+}
+Run 60
+
+%----------------------------------------------------
+% third segment of sequence
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,27] 1.00) }
+  Node activation { ([1,28] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{ 
+  Node activation {ALL 0.0 }
+  Node activation { ([1,28] 1.00) }
+  Node activation { ([1,29] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,29] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{ 
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,30] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,30] 1.00) }
+  Node activation { ([1,29] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,29] 1.00) }
+  Node activation { ([1,28] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,28] 1.00) }
+  Node activation { ([1,27] 1.00) }
+}
+Run 10

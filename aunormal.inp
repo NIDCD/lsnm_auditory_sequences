@@ -1,0 +1,101 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% aunormal.inp
+%
+% Creates nodes to be used as inputs to the model.
+% The total number of nodes is 81 (9x9)
+% Any arbitrary input can be configures by turning
+% on nodes in a timeline.
+%
+% Modified: Fatima Husain
+%           Antonio Ulloa
+%           Fri Dec  7 18:14:53 EST 2001
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,42] 1.00) }
+  Node activation { ([1,43] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{ 
+  Node activation {ALL 0.0 }
+  Node activation { ([1,43] 1.00) }
+  Node activation { ([1,44] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,44] 1.00) }
+  Node activation { ([1,45] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,45] 1.00) }
+  Node activation { ([1,46] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,46] 1.00) }
+  Node activation { ([1,47] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,47] 1.00) }
+  Node activation { ([1,46] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{ 
+  Node activation {ALL 0.0 }
+  Node activation { ([1,46] 1.00) }
+  Node activation { ([1,45] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,45] 1.00) }
+  Node activation { ([1,44] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,44] 1.00) }
+  Node activation { ([1,43] 1.00) }
+}
+Run 10
+
+%----------------------------------------------------
+set (MGNs, 81)          % Turn ON MGN, the Input
+{
+  Node activation {ALL 0.0 }
+  Node activation { ([1,43] 1.00) }
+  Node activation { ([1,42] 1.00) }
+}
+Run 10

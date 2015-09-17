@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% resetGating.inp
+%
+% Reset gating units  
+%
+% Updated by Antonio Ulloa
+% Thu Feb 14 13:53:30 EST 2002
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-----------------------------------------------------------------
+% Reset GR, RG
+%-----------------------------------------------------------------
+Set(ExGR,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InGR,81) {
+ Node Activation { ALL 0.0}
+}
+Set(ExGR_a,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InGR_a,81) {
+ Node Activation { ALL 0.0}
+}
+Set(ExGR_b,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InGR_b,81) {
+ Node Activation { ALL 0.0}
+}
+Set(ExRG,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InRG,81) {
+ Node Activation { ALL 0.0}
+}
+Set(ExRG_a,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InRG_a,81) {
+ Node Activation { ALL 0.0}
+}
+Set(ExRG_b,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InRG_b,81) {
+ Node Activation { ALL 0.0}
+}
+%-----------------------------------------------------------------
+
+%-----------------------------------------------------------------
+% Reset GA
+%-----------------------------------------------------------------
+Set(ExGA,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InGA,81) {
+ Node Activation { ALL 0.0}
+}
+Set(ExGA_a,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InGA_a,81) {
+ Node Activation { ALL 0.0}
+}
+Set(ExGA_b,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InGA_b,81) {
+ Node Activation { ALL 0.0}
+}
+%-----------------------------------------------------------------

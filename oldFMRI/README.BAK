@@ -1,0 +1,37 @@
+Programs for generating stimuli
+	generate_stim.m
+	checkboxes.m
+	showboxes.m
+	fixboxes.m
+	save_mat.m
+	writeout.m
+
+Programs for producing the summed synaptic activity
+	sumsynact.m
+	petfmri.m
+
+Programs for convolving with hemodynamic delay
+	convol.m
+	poissonseries.m	**
+	poisson.m		**
+	factorial.m		**
+
+Program for generating fmri time series
+	fmrigen.m   
+
+Programs for generating boxcar functions and multiple regressors
+	boxcar.m 
+	boxcar_fsel.m
+	boxcar_mem.m
+
+XXXPrograms for correlating fmri data with an assumed boxcar function
+	corrbox.m
+	correlator.m
+
+Programs for plotting the synaptic and fMRI simulated data
+	plotfmri.m
+
+Programs for making simple movies of the electrical activities 
+	loadmovie1.m
+	mov.m
+

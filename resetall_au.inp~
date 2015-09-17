@@ -1,0 +1,199 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% resetall_au.inp
+%
+% Reset all units  to low Activation
+%
+% Updated by Antonio Ulloa
+% Thu Feb 14 13:53:30 EST 2002
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%-----------------------------------------------------------------
+% Turn OFF MGN, the Input
+%-----------------------------------------------------------------
+set (MGNs, 81)         
+{
+  Node Activation {ALL 0.00 }
+}
+%-----------------------------------------------------------------
+
+%-----------------------------------------------------------------
+% Reset Ai
+%-----------------------------------------------------------------
+Set(EA1u,81) {
+ Node Activation { ALL 0.00 }
+}
+Set(EA1d,81) {
+ Node Activation { ALL 0.00 }
+}
+
+Set(IA1u,81) {
+ Node Activation { ALL 0.00 }
+}
+Set(IA1d,81) {
+ Node Activation { ALL 0.00 }
+}
+%-----------------------------------------------------------------
+
+
+%-----------------------------------------------------------------
+% Reset Aii
+%-----------------------------------------------------------------
+Set(EA2u,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(EA2d,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(EA2c,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(IA2u,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(IA2d,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(IA2c,81) {
+ Node Activation { ALL 0.0 }
+}
+%-----------------------------------------------------------------
+
+%-----------------------------------------------------------------
+% Reset STG
+%-----------------------------------------------------------------
+Set(ESTG,81) {
+ Node Activation { ALL 0.00 }
+}
+Set(ISTG,81) {
+ Node Activation { ALL 0.00 }
+}
+%-----------------------------------------------------------------
+
+%-----------------------------------------------------------------
+% Reset GR, RG
+%-----------------------------------------------------------------
+Set(ExGR,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InGR,81) {
+ Node Activation { ALL 0.0}
+}
+Set(ExGR_a,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InGR_a,81) {
+ Node Activation { ALL 0.0}
+}
+Set(ExGR_b,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InGR_b,81) {
+ Node Activation { ALL 0.0}
+}
+
+Set(ExRG,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InRG,81) {
+ Node Activation { ALL 0.0}
+}
+Set(ExRG_a,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InRG_a,81) {
+ Node Activation { ALL 0.0}
+}
+Set(ExRG_b,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InRG_b,81) {
+ Node Activation { ALL 0.0}
+}
+
+%-----------------------------------------------------------------
+% Reset PFC
+%-----------------------------------------------------------------
+Set(ExFS,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InFS,81) {
+ Node Activation { ALL 0.0}
+}
+Set(ExFS_a,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InFS_a,81) {
+ Node Activation { ALL 0.0}
+}
+Set(ExFS_b,81) {
+ Node Activation { ALL 0.00}
+}
+Set(InFS_b,81) {
+ Node Activation { ALL 0.0}
+}
+
+Set(EFD1,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(IFD1,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(EFD1_a,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(IFD1_a,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(EFD1_b,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(IFD1_b,81) {
+ Node Activation { ALL 0.0 }
+}
+
+Set(EFD2,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(IFD2,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(EFD2_a,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(IFD2_a,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(EFD2_b,81) {
+ Node Activation { ALL 0.0 }
+}
+Set(IFD2_b,81) {
+ Node Activation { ALL 0.0 }
+}
+
+Set(ExFR,81) {
+ Node Activation { ALL 0.00 }
+}
+Set(InFR,81) {
+ Node Activation { ALL 0.00 }
+}
+Set(ExFR_a,81) {
+ Node Activation { ALL 0.00 }
+}
+Set(InFR_a,81) {
+ Node Activation { ALL 0.00 }
+}
+Set(ExFR_b,81) {
+ Node Activation { ALL 0.00 }
+}
+Set(InFR_b,81) {
+ Node Activation { ALL 0.00 }
+}
+%-----------------------------------------------------------------
+
+%-----------------------------------------------------------------
+% Reset attention
+%-----------------------------------------------------------------
+Set(Atts,1) {
+ Node Activation { ALL 0.01}
+}
+%-----------------------------------------------------------------
