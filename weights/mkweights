@@ -1,0 +1,5 @@
+#! /bin/csh
+
+foreach file (*.ws)
+  ../bin/netgen $file
+end

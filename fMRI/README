@@ -1,0 +1,25 @@
+To run, 'runfm'
+the parameters are in the file "parameters.m"
+
+Files in this directory: 
+
+README -- this file
+
+runfm.m  -- executes fMRI simulation, displays graphic results
+
+parameters.m -- declares fMRI simulation parameters
+
+sumsynact.m -- sums up simulated synaptic activity (for each region)
+
+petfmri.m   -- sums up simulated synaptic activity for each region
+
+fmrigen.m -- given the simulated synaptiv activity, generates BOLD activity
+
+convol.m -- convolves hemodynamic delay with any function  
+
+poissonseries.m -- poisson series equations  
+
+poisson.m -- poisson equation 
+
+spec_pet.m -- simulated synaptic activity 
+
